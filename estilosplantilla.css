@@ -1,0 +1,100 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Dosis', sans-serif;
+
+}
+
+body
+{
+	background-color: #03a9f4;
+
+}
+
+
+fieldset
+{
+	border: none;
+	margin: 0 auto;
+	padding: 20px;
+	width: 50%;
+}
+footer
+{
+	background-color: #0d47a1;
+	color: #FFF;
+	padding: 20px;
+
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Dosis', sans-serif;
+}
+
+input
+{
+	/*background-color: #e3f2fd;*/
+	border: 2px solid #03a9f4;
+	border-radius: 5px;
+	margin-right: 5%;
+	padding: 1em;
+	width: 40%;
+}
+.absolute-bottom
+{
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+.btn
+{
+	border:none;
+	border-radius: 5px;
+	font-size: 1em;
+	margin: 0.5em auto;
+	padding: 0em 1em;
+}
+
+
+.btnradius
+{
+	display: block;
+	border-radius: 50px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
+			  0 2px 10px 0 rgba(0,0,0,0.12);
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	width: 40px;	
+}
+
+.btnradius:hover
+{
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
+			  0 4px 15px 0 rgba(0,0,0,0.15);
+}
+
+.fondored
+{
+	background-color: #f44336;
+	color: #FFF;
+}
+.fondogreen
+{
+	background-color: #00c853;
+	color: #FFF;
+}
+.fondoblue
+{
+	background-color: #03a9f4;
+	color: #FFF;
+}
+.ed-container
+{
+	background-color: white;
+	box-shadow: 0px 0px 20px 1px #212121;
+	border-radius: 0 0 10px 10px;
+}
