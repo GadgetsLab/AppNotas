@@ -1,4 +1,4 @@
-<?php
+ <?php
 
  ?>
 <!DOCTYPE html>
@@ -25,19 +25,20 @@
 		</section>
 		<section class="ed-item base-100" style="text-align: center;">
 			<a href="#" class="fondogreen btnradius derecha add"><i class="icon-plus"></i></a>
+			<div id="response" class="oculto fontwhite"></div>
 			<form id="form" action="core/processor.php" method="post">
 				<fieldset class="centrar-contenido">
 					<legend>
 						Notas y Promedios
 					</legend>
 					<!--<label for="nota">Nota</label>-->
-					<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda"min="0" max="5" >
+					<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda"min="0" max="5" required>
 
 					<!--<label for="prom">Promedio</label>-->
-					<input type="number" name="prom[]" placeholder="Promedio" class="izquierda" min="0" max="100">
+					<input type="number" name="prom[]" placeholder="Promedio" class="izquierda" min="0" max="100" required>
 					<a hreft="#" class="fondored delete btnradius derecha"><i class="icon-minus"></i></a>
 				</fieldset>
-				<button class="btn fondoblue">Calcular</button>
+				<button class="btn fondoblue" id="calcular">Calcular</button>
 			</form>
 		</section>
 		<hr>

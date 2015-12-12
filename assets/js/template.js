@@ -14,3 +14,20 @@ $("#form").on('click','.delete', function(t){
         $(this).remove();
     }
 });
+$("#form").submit(function(a){
+    a.preventDefault();
+    var $data = $(this).serialize();
+    $.ajax({
+        type: "post",
+        url: "core/processor.php",
+        data: $data,
+        contentType: "application/x-www-form-urlencoded"
+
+    })
+    .done(function(m){
+        $("#response")
+        .fadeIn()
+        .removeClass("success").removeClass("partial").removeClass("error")
+        .addClass(m['class']).html(m['message']);
+    })
+});

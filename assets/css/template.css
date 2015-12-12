@@ -90,6 +90,15 @@ input
 .clr{
 	clear: both;
 }
+.fontwhite
+{
+	color: #FFF;
+}
+
+.error
+{
+	background-color: #b71c1c !important;
+}
 .fondored
 {
 	background-color: #f44336;
@@ -113,5 +122,17 @@ input
 	min-height: 100%;
 	position: relative;
 	margin-bottom: 27em;
+}
+.partial
+{
+	background-color: #f57f17 !important; 
+}
+.oculto
+{
+	display: none;
+}
+.success
+{
+	background-color: #004d40 !important;
 }
 
