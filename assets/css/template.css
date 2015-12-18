@@ -41,15 +41,26 @@ input
 	/*background-color: #e3f2fd;*/
 	border: 2px solid #03a9f4;
 	border-radius: 5px;
-	margin-right: 5%;
 	padding: 1em;
-	width: 40%;
+	width: 100%;
+}
+input:focus{
+	outline: none;
+}
+ul{
+	list-style: none;
 }
 #form{
 	text-align: center;
 }
 #form button{
 	margin-right: 43px;
+}
+#response{
+	text-align: center;
+	padding: 1em 0;
+	margin-bottom: 1em;
+	font-family: 'Nunito', sans-serif;
 }
 .absolute-bottom
 {
@@ -123,9 +134,15 @@ input
 	position: relative;
 	margin-bottom: 27em;
 }
+.input-error{
+	border: 1px solid #b71c1c !important;
+}
+.input-succes{
+	border: 1px solid #004d40 !important;
+}
 .partial
 {
-	background-color: #f57f17 !important; 
+	background-color: #f57f17 !important;
 }
 .oculto
 {
