@@ -5,6 +5,8 @@
 <html>
 <head>
 	<title>AppNotas</title>
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
 	<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/template.css">
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700,300' rel='stylesheet' type='text/css'>
