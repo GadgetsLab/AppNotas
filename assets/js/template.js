@@ -48,3 +48,10 @@ $("#form").submit(function(a){
         $("#response").html('Completa todos los campos').addClass('error');
     }
 });
+$(".velo, .cerrarmodal").on("click", function(){
+    $(".velo").fadeOut();
+});
+
+$(".abrirmodal").on("click", function(){
+    $(".velo").fadeIn();
+});
