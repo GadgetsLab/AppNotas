@@ -49,9 +49,41 @@ $("#form").submit(function(a){
     }
 });
 $(".velo, .cerrarmodal").on("click", function(){
-    $(".velo").fadeOut();
+    $(".velo").add("#modal").fadeOut();
 });
 
 $(".abrirmodal").on("click", function(){
-    $(".velo").fadeIn();
+    $(".velo").add("#modal").fadeIn();
+});
+
+$("#modalform").submit(function(a){
+    var control = true;
+    a.preventDefault();
+    var $datamodal = $(this).serialize();
+    $("#modalform input, #modalform textarea").each(function(){
+        if($(this).val() == ''){
+            $(this).addClass('input-error');
+            control = false;
+        }else{
+            $(this).addClass('input-success');
+        }
+    });
+    if(control){
+        $.ajax({
+            type: "post",
+            url: "core/email.php",
+            data: $datamodal,
+            contentType: "application/x-www-form-urlencoded"
+        })
+        .done(function(o){
+            //var cualquiera = (o).toArray();
+            //console.log(cualquiera);
+            $(".result").html(o);
+            //.fadeIn()
+            //.removeClass("success").removeClass("error")
+            //.addClass(o['class']).html(o['message']);
+        });
+    }else{
+        $(".result").html('Completa todos los campos').addClass('error');
+    }
 });

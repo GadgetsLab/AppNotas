@@ -64,22 +64,22 @@
 	<!--<footer class="absolute-bottom">Todos los derechos reservados</footer>-->
 </div>
 <!--Cuerpo de la modal de contacto-->
-<div class="velo">	
-				<section id="modal" class="fondowhite">
-						<a class="cerrarmodal">x</a>	
-						<form id="modalform" action="core/email.php">
-							<input type="text" placeholder="Nombre" class="margin-bottom-10" required>
-							<input type="email" placeholder="Correo" class="margin-bottom-10" required>
-                            <select name="asunto" id="" class="margin-bottom-10">
-                            	<option value="">Tipo de mensaje</option>
-                            	<option value="1">Sugerencia</option>
-                            	<option value="2">Errores</option>		
-                            </select>
-                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comenta"></textarea>	
-                            <button class="btn">Enviar</button>					
-                       </form>
-				</section>
-			</div>
+<div class="velo"></div>
+	<section id="modal" class="fondowhite">
+		<a class="cerrarmodal">x</a>
+		<div class="result"></div>	
+		<form id="modalform">
+			<input type="text" name="nombre" value="daniel" placeholder="Nombre" class="margin-bottom-10">
+			<input type="email" name="correo" value="reickchozo@gmail.com" placeholder="Correo" class="margin-bottom-10">
+            <select name="asunto" id="" class="margin-bottom-10">
+              	<option value="">Tipo de mensaje</option>
+                <option value="1">Sugerencia</option>
+                <option value="2">Errores</option>		
+            </select>
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comenta">Testing</textarea>	
+          	<button class="btn">Enviar</button>					
+        </form>
+	</section>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="assets/js/template.js"></script>
 </body>

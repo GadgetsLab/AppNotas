@@ -8,9 +8,9 @@ $mensaje = $request->mensaje;
 
 $mail = new PHPMailer;
 $mail->setFrom($correo, $nombre); //quien lo envia. Remitente
-$mail->addAddres('reickchozo@gmail.com'); //A quien llega. El receptor
-$mail->addAddres('juuanDuuke@gmail.com');
-$mail->Subjet($asunto); //Aqui va el asunto del mensaje
+$mail->addAddress('reickchozo@gmail.com'); //A quien llega. El receptor
+$mail->addAddress('juuanDuuke@gmail.com');
+$mail->Subject = $asunto; //Aqui va el asunto del mensaje
 $mail->isHtml(true);
 $body = "<h3>Nuevo correo de AppNotas</h3>
 		<p><b>Nombre: </b>$nombre</p>
@@ -22,15 +22,17 @@ $mail->Body	= $body;
 
 if(!$mail->send())
 {
-	$response = ['class'=>'error','message'=>'Ocurrio un error: Intentelo mas tarde.'];
-
+	//$response = ['class'=>'error','message'=>'Ocurrio un error: Intentelo mas tarde.'];
+	echo "Algo salio mal. Intentalo luego";
 }
 else
 {
-    $response = ['class'=>'error','message'=>'Gracias por su opinion.'];
+    //$response = ['class'=>'success','message'=>'Gracias por su opinion.'];
+	echo "Gracias por su opinion";
+
 }
 	
- echo json_encode($response, JSON_FORCE_OBJECT);
+ //echo json_encode($response, JSON_FORCE_OBJECT);
 
 
- ?>
+ 
