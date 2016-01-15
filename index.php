@@ -1,6 +1,3 @@
-	<?php
-
- ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link href="https://file.myfontastic.com/fhjgoJNzij4FGyAUWmsG4m/icons.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="wrapper">
@@ -61,7 +59,6 @@
 		</section>
 		<hr>
 	</div>
-	<!--<footer class="absolute-bottom">Todos los derechos reservados</footer>-->
 </div>
 <!--Cuerpo de la modal de contacto-->
 <div class="velo"></div>
@@ -82,5 +79,11 @@
 	</section>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="assets/js/template.js"></script>
+    <script>
+        var $ancho = $(window).width();
+            if($ancho < 380){
+                window.location.replace("index.movil.php");
+            }
+    </script>
 </body>
 </html>

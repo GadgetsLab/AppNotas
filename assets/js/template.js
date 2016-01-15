@@ -87,3 +87,6 @@ $("#modalform").submit(function(a){
         $(".result").html('Completa todos los campos').addClass('error');
     }
 });
+$(".click-menu").on("click", function(){
+    $(this).next().slideToggle();
+})

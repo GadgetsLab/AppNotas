@@ -88,6 +88,9 @@ ul{
 	color:;
 
 }
+.border-bottom-black{
+    border-bottom: 1px dotted black;
+}
 .btn
 {
 	border:none;
@@ -161,6 +164,10 @@ ul{
 	background-color: #03a9f4;
 	color: #FFF;
 }
+.fondo-black{
+    background-color: #000;
+    color: #fff;
+}
 .fondo-form
 {
 	background-color: white;
@@ -180,7 +187,9 @@ ul{
 {
 	margin-bottom: 10px;
 }
-
+.padding-top-30{
+    padding-top: 30px;
+}
 .partial
 {
 	background-color: #f57f17 !important;
@@ -192,6 +201,12 @@ ul{
 .success
 {
 	background-color: #004d40 !important;
+}
+.text-center{
+    text-align: center;
+}
+.text-justify{
+    text-align: justify;
 }
 .velo
 {
