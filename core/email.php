@@ -22,17 +22,10 @@ $mail->Body	= $body;
 
 if(!$mail->send())
 {
-	//$response = ['class'=>'error','message'=>'Ocurrio un error: Intentelo mas tarde.'];
 	echo "Algo salio mal. Intentalo luego";
-}
-else
-{
-    //$response = ['class'=>'success','message'=>'Gracias por su opinion.'];
+}else{
 	echo "Gracias por su opinion";
-
 }
-	
- //echo json_encode($response, JSON_FORCE_OBJECT);
 
 
  
