@@ -80,13 +80,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="assets/js/template.js"></script>
     <script>
-<<<<<<< HEAD
         $(function(){
             var $ancho = $(window).width();
-=======
-        var $ancho = $(window).width();
-
->>>>>>> origin/master
             if($ancho <= 380){
                 window.location.replace("index.movil.php");
             }
