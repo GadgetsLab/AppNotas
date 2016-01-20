@@ -1,11 +1,11 @@
 $(".add").on("click", function(e){
 	e.preventDefault();
 	var $cont = $("#form input").length/2;
-	$("fieldset").append('<div class="ed-container">'+
+	$("fieldset").append('<div class="ed-container margin-bottom-10">'+
                             '<div class="ed-item tablet-45">'+
-                            '<input type="number" step="any" name="nota[]" placeholder="Nota" class="    izquierda"min="0" max="5" ></div>'+
+                            '<input type="number" step="any" name="nota[]" placeholder="Nota" class=" izquierda" min="0" max="5"></div>'+
                             '<div class="ed-item tablet-45">'+
-                            '<input type="number" name="prom[]" placeholder="Promedio"'+
+                            '<input type="number" name="prom[]" placeholder="Promedio" '+
                             'class="izquierda" min="0" max="100"></div>'+
                             '<div class="ed-item tablet-5">'+
                             '<a hreft="#" class="fondored delete btnradius"><i class="icon-minus"></i></a>'+ '</div></div>');

@@ -27,7 +27,7 @@
             <form id="form" action="core/processor.php" method="post">
 		    	<fieldset class="centrar-contenido ed-container no-padding border-bottom-black">
 	    				<div class="ed-item">
-    						<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda"min="0" max="5" >
+    						<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda " min="0" max="5" >
 					    </div>
 					    <div class="ed-item">
 						    <input type="number" name="prom[]" placeholder="Promedio" class="izquierda" min="0" max="100">
@@ -35,14 +35,14 @@
                 </fieldset>
             </form>
             <div class="ed-item total">
-                <input type="number" disabled class="result">
+                <div id="response" class="fontwhite"></div>
             </div>
             <div class="ed-container">
                 <div class="ed-item base-1-3 text-center">
-                    <a href="#" class="fondogreen btnradius derecha add text-center"><i class="icon-plus"></i></a>
+                    <a href="#" class="fondogreen btnradius derecha addmovil text-center"><i class="icon-plus"></i></a>
                 </div>
                 <div class="ed-item base-1-3 text-center">
-                    <a hreft="#" class="fondored delete btnradius text-center margin-left-20"><i class="icon-minus"></i></a>
+                    <a hreft="#" class="fondored deletemovil btnradius text-center margin-left-20"><i class="icon-minus"></i></a>
                 </div>
                 <div class="ed-item base-1-3 text-center">
                     <a href="#" class="fondoblue calculate btnradius text-center"><i class="icon-calculator"></i></a>
@@ -51,6 +51,7 @@
         </div>
     </div>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="assets/js/template.js"></script>
+	<script src="assets/js/movil.js"></script>
+    <script src="assets/js/template.js"></script>
 </body>
 </html>

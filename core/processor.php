@@ -26,7 +26,7 @@ if ($_POST) {
             if ($necesaria < 0) {
                 $necesaria = 0;
             }
-            $response = ['class'=>'partial', 'message'=>'Nota parcial('.$total_prom.'%): '.$nota.', Nota necesaria('.$prom_not_eval.'): '.$necesaria];
+            $response = ['class'=>'partial', 'message'=>'Nota parcial('.$total_prom.'%): '.$nota.', Nota necesaria('.$prom_not_eval.'%): '.$necesaria];
 
         }
     }

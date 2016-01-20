@@ -42,9 +42,9 @@
 			</div>
 			<form id="form" action="core/processor.php" method="post">
 				<fieldset class="centrar-contenido">
-					<div class="ed-container">
+					<div class="ed-container margin-bottom-10">
 						<div class="ed-item tablet-45">
-							<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda"min="0" max="5" >
+							<input type="number" step="any" name="nota[]" placeholder="Nota" class="izquierda" min="0" max="5" >
 						</div>
 						<div class="ed-item tablet-45">
 							<input type="number" name="prom[]" placeholder="Promedio" class="izquierda" min="0" max="100">
@@ -80,8 +80,13 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="assets/js/template.js"></script>
     <script>
+<<<<<<< HEAD
         $(function(){
             var $ancho = $(window).width();
+=======
+        var $ancho = $(window).width();
+
+>>>>>>> origin/master
             if($ancho <= 380){
                 window.location.replace("index.movil.php");
             }
