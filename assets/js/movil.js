@@ -48,7 +48,9 @@ $(".calculate").on("click", function(a){
                     .addClass(m['class']).html(m['message']);
             });
     }else{
-        $("#response").html('Completa todos los campos').addClass('error');
+        $("#response")
+            .removeClass("success").removeClass("partial").removeClass("error")
+            .html('Completa todos los campos').addClass('error');
     }
 });
 

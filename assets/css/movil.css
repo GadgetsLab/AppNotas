@@ -40,3 +40,12 @@ nav{
 .margin-left-20{
     margin-left: 20%; 
 }
+.icon-plus:before{
+    content: "+";
+}
+.icon-calculator:before{
+    content: "=";
+}
+.icon-minus:before{
+    content: "-";
+}

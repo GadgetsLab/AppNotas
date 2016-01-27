@@ -83,7 +83,7 @@
         $(function(){
             var $ancho = $(window).width();
             if($ancho <= 380){
-                window.location.replace("index.movil.php");
+                location.href="index.movil.php";
             }
         });
     </script>
